@@ -30,7 +30,7 @@ namespace HotelProject.WebUI.Controllers
 			var client = _httpClientFactory.CreateClient();
 			var jsonData = JsonConvert.SerializeObject(createBookingDto);
 			StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-			var responseMessage = await client.PostAsync("http://localhost:5283/api/Booking", stringContent);
+			var responseMessage = await client.PostAsync("http://localhost:5283/api/Booking/", stringContent);
 			return RedirectToAction("Index", "Default");
 		}
 	}

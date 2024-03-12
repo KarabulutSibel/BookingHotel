@@ -32,6 +32,7 @@ namespace HotelProject.WebUI.Mapping
             CreateMap<CreateSubscribeDto, Subscribe>();
 
             CreateMap<CreateBookingDto, Booking>();
+            CreateMap<ApprovedReservationDto, Booking>();
 		}
     }
 }

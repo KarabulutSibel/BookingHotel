@@ -41,13 +41,13 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating date" id="date3" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" asp-for="CheckIn" id="checkin" placeholder="Giriş Tarihi" data-target="#date3" data-toggle="datetimepicker" />
+                                    <input type="text" class="form-control datetimepicker-input" asp-for="CheckIn" placeholder="Giriş Tarihi" data-target="#date3" data-toggle="datetimepicker" />
                                     <label for="checkin">Giriş Tarihi</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating date" id="date4" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" asp-for="CheckOut" id="checkout" placeholder="Çıkış Tarihi" data-target="#date4" data-toggle="datetimepicker" />
+                                    <input type="text" class="form-control datetimepicker-input" asp-for="CheckOut" placeholder="Çıkış Tarihi" data-target="#date4" data-toggle="datetimepicker" />
                                     <label for="checkout">Çıkış Tarihi</label>
                                 </div>
                             </div>
@@ -103,3 +103,17 @@
         </div>
     </div>
 </div>
+
+<script>
+    $('#date3').datetimepicker({
+        format: 'DD.MM.YYYY HH:mm',
+        locale: 'tr',
+        timeZone: 'Europe/Istanbul'
+    });
+
+    $('#date4').datetimepicker({
+        format: 'DD.MM.YYYY HH:mm',
+        locale: 'tr',
+        timeZone: 'Europe/Istanbul'
+    });
+</script>
